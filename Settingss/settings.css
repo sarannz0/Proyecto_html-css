@@ -9,8 +9,10 @@
 --c8: #9775FA;
 --c9: #F783AC;
 --f: #252525a8;
-
 } 
+body{
+    background-color: black;
+}
 a,
 a:visited,
 a:hover,
@@ -18,9 +20,6 @@ a:focus,
 a:active {
   text-decoration: none;
   color: inherit;
-}
-body{
-    background-color: black;
 }
 *{
 padding: 0;

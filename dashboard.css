@@ -160,6 +160,9 @@ width: 98%;
 height: 97%;
 border-radius: 15px;
 background-color: #101010;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .aside_uno{
@@ -294,3 +297,74 @@ font-size: 0.7vw;
 }
 
 
+/* Canva  */
+
+.contenedor_cards {
+  width: 95%;
+  height: 94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logos_cards {
+  width: 100%;
+  height: 34%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.cards_cars {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+.logos_cards > section {
+  height: 100%;
+  width: 14%;
+  background-color: #1E1E1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+}
+
+.logos_cards img {
+  width: 150px;
+}
+
+.cars_top {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  
+}
+
+.cars_down {
+  width: 100%;
+  height: 48%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.cars_top > section {
+  height: 100%;
+  width: 23%;
+  background-color: #1E1E1E;
+  border-radius: 9px;
+}
+
+.cars_down > section {
+  height: 100%;
+  width: 23%;
+  border-radius: 9px;
+  background-color: #1E1E1E;
+}

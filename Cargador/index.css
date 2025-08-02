@@ -2,8 +2,14 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+font-family: han;
 }
-
+@font-face {
+    font-family: 'han';
+    src: url('/fonts/Hannari-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 .cargador_main{
     width: 100%;
     height: 100vh;

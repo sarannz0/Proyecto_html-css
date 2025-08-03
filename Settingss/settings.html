@@ -7,6 +7,9 @@
     <title>Settings</title>
 </head>
 <body>
+            <div id="cargador">
+                <img src="/src/image 7.png" alt="">
+        </div>
     <main class="dashboard_main">
         <header class="dashboard_header">
             <div class="Logo">
@@ -71,4 +74,13 @@
         </article>
     </main>
 </body>
+<script>
+window.addEventListener('load', () => {
+  const loader = document.getElementById('cargador');
+
+  setTimeout(() => {
+    loader.style.display = 'none';
+  }, 300); // 1 segundo
+});
+</script>
 </html>

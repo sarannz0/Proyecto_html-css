@@ -16,6 +16,12 @@ body{
 input{
     all: unset;;
 }
+a {
+  all: unset;
+  color: white;
+  font-size: 12px;
+}
+
 *{
 padding: 0;
 margin: 0;

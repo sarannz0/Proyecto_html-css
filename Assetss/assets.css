@@ -582,8 +582,16 @@ justify-content: space-between;
 .C_4 > :nth-child(2) >:nth-child(1) div{
 height: 100%;
 width: 20%;
-background-color: #1E1E1E;
+background-color: #ee0c0c;
 border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.C_4 > :nth-child(2) >:nth-child(1) div img{
+    object-fit:cover;
+    width: 250px;
 }
 
 .C_4 > :nth-child(2)>:nth-child(2){
@@ -600,8 +608,17 @@ height: 100%;
 width: 20%;
 background-color: #1E1E1E;
 border-radius: 8px;
+background-color: #ee0c0c;
+object-fit: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
 }
-
+.C_4 > :nth-child(2) >:nth-child(2) div img{
+    object-fit:cover;
+    width: 250px;
+}
 
 .contenedor_content_left{
 width: 69%;

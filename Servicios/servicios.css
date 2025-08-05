@@ -169,7 +169,7 @@ justify-content: left;
 width: 98%;
 height: 97%;
 border-radius: 15px;
-background-color: #101010;
+background-color: #1edb0d;
 }
 
 .aside_uno{
@@ -303,4 +303,230 @@ font-size: 1.5vw;
 font-size: 0.7vw;
 }
 
+.MasterContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#Left_Container{
+width: 69%;
+background-color: var(--c1);
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
 
+
+#ContenedorCar{
+width: 100%;
+height: 52%;
+background-color: #101010;
+border-radius: 10px;
+position: relative;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+}
+
+#ContenedorBotones{
+  width: 100%;
+  height: 6%;
+  background-color: var(--c4);  
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+
+
+
+
+/**/
+#Right_Container{
+  width: 30%;
+  background-color: var(--c2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.R_c_Up{
+height: 69%;
+width: 100%;
+background-color: var(--c5);
+}
+.R_c_Down{
+height: 30%;
+width: 100%;
+background-color: var(--c6);
+display: flex;
+flex-direction: row;
+padding: 3%;
+justify-content: space-between;
+}
+
+.R_c_Down > :nth-child(1){
+width: 49%;
+height: 100%;
+background-color: var(--f);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.R_c_Down > :nth-child(2){
+  width: 49%;
+  height: 100%;
+  background-color: var(--c3);
+  border-radius: 10px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.C_botonesBlancos{
+width: 400px;
+height: 100%;
+background-color: var(--c3);
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+#ContenedorBotones >:nth-child(1){
+  margin-left: 15px;
+  font-size: 25px;
+  color: white;
+}
+.C_botonesBlancos >:nth-child(1){
+  width: 40%;
+  height: 80%;
+  background-color: white;  
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgb(0, 0, 0);
+  font-size: 10px;
+  justify-content: space-around;
+}
+.C_botonesBlancos >:nth-child(2){
+  width: 40%;
+  height: 80%;
+  background-color: white;  
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:rgb(0, 0, 0);
+  font-size: 10px;
+  justify-content: space-around;  
+}
+.AbsoluteName{
+  position: absolute;
+  left: 3%;
+  top: 3%;
+  color: white;
+  font-size: 26px;
+}
+#OfferOne{
+  width: 100%;
+  height: 20%;
+  background-color: var(--c4);  
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+#OfferOne > :nth-child(1){
+width: 20%;
+height: 100%;
+background-color: var(--c2);
+}
+#OfferOne > :nth-child(2){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2);  
+}
+#OfferOne > :nth-child(3){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2);
+  display: flex;
+  align-content: center;
+  justify-content: center;    
+}
+#OfferOne > :nth-child(4){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2);  
+}
+#OfferOne > :nth-child(5){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2);  
+}
+#OfferOne > :nth-child(6){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2);  
+}
+/*----------------------------------*/
+#OfferTwo{
+  width: 100%;
+  height: 20%;
+  background-color: var(--c4);  
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+#OfferTwo > :nth-child(1){
+  width: 20%;
+  height: 100%;
+  background-color: var(--c2);
+}
+#OfferTwo > :nth-child(2){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2);  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#OfferTwo > :nth-child(3){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2);
+  display: flex;
+  align-content: center;
+  justify-content: center;  
+}
+#OfferTwo > :nth-child(4){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2); 
+}
+#OfferTwo > :nth-child(5){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2); 
+}
+#OfferTwo > :nth-child(6){
+  width: 15%;
+  height: 100%;
+  background-color: var(--c2); 
+}

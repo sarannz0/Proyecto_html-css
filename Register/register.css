@@ -91,7 +91,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #ff7474;
+        background-color: #101010;
     }
     
     .dates > .first {
@@ -115,6 +115,7 @@
         color: rgb(255, 255, 255, 0.4);
         font-size: 12px;
     }
+
     .dates > .email {
         width: 100%;
         height: 50%;
@@ -261,8 +262,9 @@
         margin-top: 5px;
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.288);
+        color: rgb(192, 191, 191);
+        font-size: 15px;
     }
-    
     
     form * {
         all: unset;

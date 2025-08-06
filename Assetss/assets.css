@@ -582,7 +582,6 @@ justify-content: space-between;
 .C_4 > :nth-child(2) >:nth-child(1) div{
 height: 100%;
 width: 20%;
-background-color: #ee0c0c;
 border-radius: 8px;
 display: flex;
 align-items: center;
@@ -608,7 +607,6 @@ height: 100%;
 width: 20%;
 background-color: #1E1E1E;
 border-radius: 8px;
-background-color: #ee0c0c;
 object-fit: cover;
 display: flex;
 align-items: center;
@@ -847,117 +845,6 @@ padding: 3%;
 }
 
 
-@media (max-width: 480px) {
-  .dashboard_main {
-    flex-direction: column;
-    padding: 10px;
-    min-width: unset;
-    height: auto;
-  }
-
-  .dashboard_header {
-    flex-direction: column;
-    height: auto;
-    gap: 10px;
-  }
-
-  .Logo, .Legacy, .btns_up {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .btns_up {
-    flex-direction: row;
-    position: static;
-    gap: 10px;
-  }
-
-  .contenedor_canva {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .dashboard_aside {
-    display: none; /* Ocultar aside en móvil */
-  }
-
-  .canva {
-    width: 100%;
-    height: auto;
-  }
-
-  .contenedor_content {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-
-  .MasterCont {
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .contenedor_content_left,
-  .contenedor_content_right {
-    width: 100%;
-    height: auto;
-  }
-
-  .contenedor_content_left > :nth-child(2),
-  .contenedor_content_left > :nth-child(4) {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contenedor_content_left > :nth-child(4) > * {
-    width: 100% !important;
-    height: auto;
-  }
-
-  .contenedor_content_left > :nth-child(1) {
-    font-size: 24px;
-  }
-
-  .contenedor_content_left > :nth-child(2) > div > h1 {
-    font-size: 16px;
-  }
-
-  .contenedor_content_left > :nth-child(2) > div > p {
-    font-size: 10px;
-  }
-
-  .contenedor_content_right > :nth-child(2) {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .C_2, .C_3, .C_4 {
-    height: auto;
-  }
-
-  .C_2 h1, .C_2 p,
-  .C_3 div, .C_4 div {
-    font-size: 10px !important;
-  }
-
-  .contorns {
-    width: 100%;
-    height: auto;
-    max-width: none;
-    max-height: none;
-  }
-
-  .contorns > :nth-child(1) {
-    font-size: 5vw;
-  }
-
-  .contorns > :nth-child(2) {
-    font-size: 3vw;
-  }
-}
 
 @media (min-width: 481px) and (max-width: 1024px) {
   body {
@@ -1023,8 +910,7 @@ padding: 3%;
   }
 
   .MasterCont {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
     height: auto;
     gap: 20px;
@@ -1080,6 +966,9 @@ padding: 3%;
 
   .contenedor_content_right {
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .contenedor_content_right > :nth-child(1),
@@ -1092,13 +981,39 @@ padding: 3%;
     padding: 10px;
   }
 
-  .C_3 > div {
-    flex-direction: row;
+  .C_2 {
+    display: flex;
+    flex-direction: column;
+    height: 250px!important;
+    padding: 15px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+
+  .C_2 > :nth-child(1),
+  .C_2 > :nth-child(2) {
+    width: 100%;
+    height: 80px !important;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
   }
 
+  .C_2 > :nth-child(1) > div,
+  .C_2 > :nth-child(2) > div {
+    position: relative;
+  }
+  .C_3 {
+    height: 150px;
+  }
+  .C_3 > div {
+    flex-direction: row;
+    gap: 20px;
+    height: 250px;
+  }
+
   .C_3 > div > div {
-    width: 48%;
+    width: 60%;
   }
 
   .C_4 > :nth-child(2) > div {

@@ -12,6 +12,8 @@
 } 
 body{
     background-color: black;
+    min-height: 920px;
+min-width: 1700px;
 }
 #cargador{
   width: 100%;

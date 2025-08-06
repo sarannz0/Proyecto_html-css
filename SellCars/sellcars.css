@@ -57,6 +57,7 @@ font-style: normal;
 }
 .dashboard_main{
 width: 100%;
+min-width: 1700px;
 height: 100vh;
 min-height: 920px;
 position: absolute;
@@ -744,4 +745,197 @@ color: rgba(255, 255, 255, 0.308);
   border-radius: 50%;
   border: 3px solid white;
   background-color: #6A0704;
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+    background-color: black;
+  }
+
+  .dashboard_main {
+    min-width: unset;
+    height: auto;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .dashboard_header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 10px;
+    height: auto;
+  }
+
+  .Logo,
+  .Legacy,
+  .btns_up {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .btns_up {
+    flex-direction: column;
+    gap: 5px;
+    position: static;
+  }
+
+  .contenedor_canva {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .dashboard_aside {
+    display: none;
+  }
+
+  .canva {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .contenedor_content {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .MasterContainer {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+  }
+
+  .left_MasterContainer,
+  .right_MasterContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .ContainerCards_up,
+  .ContainerCards_down {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .ContainerCards_up div,
+  .ContainerCards_down div {
+    width: 20%;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .ContainerLetters {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .ContainerOrder {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .ContainerOrder_left,
+  .ContainerOrder_right {
+    width: 100%;
+  }
+
+  .ContainerOrder_left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .ContainerOrder_left > div:nth-child(2) {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .ContainerOrder_right > div {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .ContainerPay {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .ContainerServices {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .ContainerServices > div {
+    width: 45%;
+    font-size: 12px;
+  }
+
+  .ContainerServices img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+  }
+
+  .right_MasterContainer_up,
+  .right_MasterContainer_middle,
+  .right_MasterContainer_bottom {
+    height: auto;
+  }
+
+  .r_m_u_container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .r_m_u_left,
+  .r_m_u_right {
+    width: 100%;
+  }
+
+  .r_m_m_container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .r_m_m_container > p {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .r_m_m_container div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #uno, #tres {
+    width: auto;
+  }
+
+  #dos, #cuatro {
+    width: 100%;
+  }
+
+  .right_MasterContainer_bottom {
+    font-size: 18px;
+    padding: 10px;
+  }
 }

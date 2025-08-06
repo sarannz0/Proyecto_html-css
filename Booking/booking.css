@@ -55,6 +55,8 @@ font-weight: normal;
 font-style: normal;
 }
 .dashboard_main{
+      min-height: 920px;
+min-width: 1700px;
 width: 100%;
 height: 100vh;
 min-height: 920px;
@@ -464,4 +466,142 @@ font-size: 11px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+    background-color: black;
+  }
+
+  .dashboard_main {
+    min-width: unset;
+    height: auto;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .dashboard_header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .Logo, .Legacy, .btns_up {
+    width: 30%;
+    min-width: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btns_up {
+    flex-direction: column;
+    gap: 5px;
+    position: static;
+  }
+
+  .contenedor_canva {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .dashboard_aside {
+    display: none; /* ocultamos el aside en tablet */
+  }
+
+  .canva {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenedor_content {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .contenedor_cards {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    width: 100%;
+  }
+
+  .logos_cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    gap: 20px;
+  }
+
+  .logos_cards > section {
+    width: 48%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .cards_cars {
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cars_top,
+  .cars_down {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    height: auto;
+  }
+
+  .cars_top > section,
+  .cars_down > section {
+    width: 48%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .Card {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .Card > header {
+    height: auto;
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .Card > div {
+    height: 150px;
+  }
+
+  .Card > div img {
+    margin-top: 15px;
+    height: 90px;
+  }
+
+  .Card > footer > article:first-child {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .Card > footer > article:last-child {
+    gap: 10px;
+    font-size: 12px;
+    padding: 5px 0;
+  }
+
+  .Card > footer > article:last-child p {
+    position: static;
+    font-size: 12px;
+    margin-left: auto;
+  }
 }
